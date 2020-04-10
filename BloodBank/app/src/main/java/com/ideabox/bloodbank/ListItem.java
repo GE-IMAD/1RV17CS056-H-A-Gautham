@@ -48,7 +48,6 @@ public class ListItem extends Fragment {
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Log.d("info", "onClick: "+donerData.id);
                 Intent i = new Intent(getActivity(),DetailActivity.class);
                 i.putExtra("Id",donerData.id);

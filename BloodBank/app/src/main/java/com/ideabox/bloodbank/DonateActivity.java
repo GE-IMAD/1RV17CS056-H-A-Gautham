@@ -48,7 +48,6 @@ public class DonateActivity extends AppCompatActivity implements AdapterView.OnI
             updateAreaSpinner(city);
             Log.d("info", "onItemSelected: "+city);
     }
-
     private void updateAreaSpinner(String city) {
 
         int aid = 0;

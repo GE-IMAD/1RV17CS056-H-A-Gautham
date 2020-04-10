@@ -84,13 +84,13 @@ public class dbHelper extends SQLiteOpenHelper {
         String sortOrder = "Id DESC";
 
         Cursor c = db.query(
-                "Doner",                                    // The table to query
-                projection,                                 // The columns to return
-                where,                                       // The columns for the WHERE clause
-                values,                                       // The values for the WHERE clause
-                null,                                       // don't group the rows
-                null,                                       // don't filter by row groups
-                sortOrder                                   // The sort order
+                "Doner",
+                projection,
+                where,
+                values,
+                null,
+                null,
+                sortOrder
         );
 
         if (c != null && c.moveToFirst()) {
@@ -131,13 +131,13 @@ public class dbHelper extends SQLiteOpenHelper {
         String[] values = {Id+""};
 
         Cursor c = db.query(
-                "Doner",                                    // The table to query
-                projection,                                 // The columns to return
-                where,                                       // The columns for the WHERE clause
-                values,                                       // The values for the WHERE clause
-                null,                                       // don't group the rows
-                null,                                       // don't filter by row groups
-                null                                   // The sort order
+                "Doner",
+                projection,
+                where,
+                values,
+                null,
+                null,
+                null
         );
 
         if (c != null && c.moveToFirst()) {
